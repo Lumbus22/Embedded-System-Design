@@ -1,0 +1,1165 @@
+18:38:52 **** Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+../Core/Src/main.c: In function 'USART2_init':
+../Core/Src/main.c:118:16: error: 'RCC_TypeDef' has no member named 'AHBN1EN'; did you mean 'AHB1ENR'?
+  118 |         RCC -> AHBN1EN = 0x1;
+      |                ^~~~~~~
+      |                AHB1ENR
+../Core/Src/main.c:123:9: error: 'USART' undeclared (first use in this function); did you mean 'USART1'?
+  123 |         USART -> AHBN1EN = 0x20000;
+      |         ^~~~~
+      |         USART1
+../Core/Src/main.c:123:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:127:26: error: unknown type name 'string'
+  127 | void USART2_write_string(string input){
+      |                          ^~~~~~
+../Core/Src/main.c:216:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  216 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:183:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  183 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:39:31 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'USART2_init':
+../Core/Src/main.c:118:16: error: 'RCC_TypeDef' has no member named 'AHBN1ENR'; did you mean 'AHB1ENR'?
+  118 |         RCC -> AHBN1ENR = 0x1;
+      |                ^~~~~~~~
+      |                AHB1ENR
+../Core/Src/main.c:123:16: error: 'USART_TypeDef' has no member named 'AHBN1ENR'
+  123 |         USART2 -> AHBN1ENR = 0x20000;
+      |                ^~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:127:26: error: unknown type name 'string'
+  127 | void USART2_write_string(string input){
+      |                          ^~~~~~
+../Core/Src/main.c:216:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  216 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:183:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  183 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:40:08 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_init':
+../Core/Src/main.c:123:16: error: 'USART_TypeDef' has no member named 'AHB1ENR'
+  123 |         USART2 -> AHB1ENR = 0x20000;
+      |                ^~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:127:26: error: unknown type name 'string'
+  127 | void USART2_write_string(string input){
+      |                          ^~~~~~
+../Core/Src/main.c:216:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  216 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:183:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  183 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:13:23 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_init':
+../Core/Src/main.c:138:9: error: 'BRR' undeclared (first use in this function)
+  138 |         BRR = 0x0683;
+      |         ^~~
+../Core/Src/main.c:138:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:234:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  234 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:201:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  201 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:22:52 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:61:1: warning: parameter names (without types) in function declaration
+   61 | void USART2_write_string(input);
+      | ^~~~
+../Core/Src/main.c:147:26: error: unknown type name 'string'
+  147 | void USART2_write_string(string input){
+      |                          ^~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  237 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:204:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  204 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:24:43 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:21:10: fatal error: iostream: No such file or directory
+   21 | #include <iostream>
+      |          ^~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:27:16 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:21:10: fatal error: iostream: No such file or directory
+   21 | #include <iostream>
+      |          ^~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:28:26 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:63:1: warning: parameter names (without types) in function declaration
+   63 | void USART2_write_string(input);
+      | ^~~~
+../Core/Src/main.c:149:26: error: unknown type name 'str'
+  149 | void USART2_write_string(str input){
+      |                          ^~~
+../Core/Src/main.c:239:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  239 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:206:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  206 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:28:49 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:63:1: warning: parameter names (without types) in function declaration
+   63 | void USART2_write_string(string);
+      | ^~~~
+../Core/Src/main.c:149:26: error: unknown type name 'string'
+  149 | void USART2_write_string(string input){
+      |                          ^~~~~~
+../Core/Src/main.c:239:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  239 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:206:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  206 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:30:01 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:239:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  239 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:206:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  206 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5624	     12	   1572	   7208	   1c28	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+19:50:59 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:23: warning: passing argument 1 of 'USART2_write_string' makes integer from pointer without a cast [-Wint-conversion]
+  100 |   USART2_write_string("Hello World!");
+      |                       ^~~~~~~~~~~~~~
+      |                       |
+      |                       char *
+../Core/Src/main.c:63:26: note: expected 'char' but argument is of type 'char *'
+   63 | void USART2_write_string(char);
+      |                          ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:149:6: error: conflicting types for 'USART2_write_string'; have 'void(char *)'
+  149 | void USART2_write_string(char *input){
+      |      ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:63:6: note: previous declaration of 'USART2_write_string' with type 'void(char)'
+   63 | void USART2_write_string(char);
+      |      ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'USART2_write_string':
+../Core/Src/main.c:155:41: error: 'str' undeclared (first use in this function)
+  155 |                         USART2 -> DR = *str++;
+      |                                         ^~~
+../Core/Src/main.c:155:41: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:51:55 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_write_string':
+../Core/Src/main.c:155:41: error: 'str' undeclared (first use in this function)
+  155 |                         USART2 -> DR = *str++;
+      |                                         ^~~
+../Core/Src/main.c:155:41: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:52:14 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+19:54:23 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+19:54:32 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+19:55:47 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+19:57:37 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+19:57:45 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+19:59:29 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:01:58 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:02:16 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5840	     12	   1572	   7424	   1d00	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:04:56 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:249:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  249 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:216:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  216 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5924	     12	   1572	   7508	   1d54	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:05:22 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   8768	     12	   1644	  10424	   28b8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:05:27 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8768	     12	   1644	  10424	   28b8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:06:13 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:109:33: error: expected ';' before '}' token
+  109 |           GPIOA->ODR ^= (1 << 5)
+      |                                 ^
+      |                                 ;
+  110 |     /* USER CODE BEGIN 3 */
+  111 |   }
+      |   ~                              
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:06:18 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   8784	     12	   1644	  10440	   28c8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:06:22 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8784	     12	   1644	  10440	   28c8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:11:39 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:218:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  218 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7028	     12	   1572	   8612	   21a4	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:11:44 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7028	     12	   1572	   8612	   21a4	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:12:43 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:218:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  218 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7028	     12	   1572	   8612	   21a4	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:12:52 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7028	     12	   1572	   8612	   21a4	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:13:25 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:217:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  217 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7008	     12	   1572	   8592	   2190	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:13:41 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:217:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  217 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7008	     12	   1572	   8592	   2190	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:14:47 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7008	     12	   1572	   8592	   2190	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:45:55 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:64:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   64 | USART2_read_string(char *, int)
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:73:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   73 | {
+      | ^
+../Core/Src/main.c:115:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  115 | void GreetUser(void){
+      |                     ^
+../Core/Src/main.c:134:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  134 | void USART2_init(void){
+      |                       ^
+../Core/Src/main.c:170:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  170 | void USART2_write_string(char *output){
+      |                                       ^
+../Core/Src/main.c:183:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  183 | char USART2_read_char(void) {
+      |                             ^
+../Core/Src/main.c:189:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  189 | void USART2_read_string(char *output, int max_length){
+      |                                                      ^
+../Core/Src/main.c:210:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  210 | {
+      | ^
+../Core/Src/main.c:258:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  258 | {
+      | ^
+../Core/Src/main.c:291:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  291 | {
+      | ^
+../Core/Src/main.c:333:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  333 | {
+      | ^
+../Core/Src/main.c:359: error: expected '{' at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' declared 'static' but never defined [-Wunused-function]
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' declared 'static' but never defined [-Wunused-function]
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:359: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:47:24 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:125:19: warning: implicit declaration of function 'USART2_read_char'; did you mean 'USART2_read_string'? [-Wimplicit-function-declaration]
+  125 |         yesOrNo = USART2_read_char();
+      |                   ^~~~~~~~~~~~~~~~
+      |                   USART2_read_string
+../Core/Src/main.c:127:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  127 |         if(yesOrNo = 'y'){
+      |            ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:184:6: error: conflicting types for 'USART2_read_char'; have 'char(void)'
+  184 | char USART2_read_char(void) {
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:125:19: note: previous implicit declaration of 'USART2_read_char' with type 'int()'
+  125 |         yesOrNo = USART2_read_char();
+      |                   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:186:16: error: 'USART' undeclared (first use in this function); did you mean 'USART1'?
+  186 |         return USART-DR;
+      |                ^~~~~
+      |                USART1
+../Core/Src/main.c:186:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:186:22: error: 'DR' undeclared (first use in this function)
+  186 |         return USART-DR;
+      |                      ^~
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:200:17: error: 'outptut' undeclared (first use in this function); did you mean 'output'?
+  200 |                 outptut[i] = readChar;
+      |                 ^~~~~~~
+      |                 output
+../Core/Src/main.c:203:16: error: 'i' undeclared (first use in this function)
+  203 |         output[i] = '\0'; //Reference
+      |                ^
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:187:1: warning: control reaches end of non-void function [-Wreturn-type]
+  187 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:258:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  258 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:48:03 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:128:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  128 |         if(yesOrNo = 'y'){
+      |            ^~~~~~~
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:187:16: error: 'USART' undeclared (first use in this function); did you mean 'USART1'?
+  187 |         return USART-DR;
+      |                ^~~~~
+      |                USART1
+../Core/Src/main.c:187:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:187:22: error: 'DR' undeclared (first use in this function)
+  187 |         return USART-DR;
+      |                      ^~
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:201:17: error: 'outptut' undeclared (first use in this function); did you mean 'output'?
+  201 |                 outptut[i] = readChar;
+      |                 ^~~~~~~
+      |                 output
+../Core/Src/main.c:204:16: error: 'i' undeclared (first use in this function)
+  204 |         output[i] = '\0'; //Reference
+      |                ^
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+  188 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:259:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  259 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:48:49 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:187:16: error: 'USART' undeclared (first use in this function); did you mean 'USART1'?
+  187 |         return USART -> DR;
+      |                ^~~~~
+      |                USART1
+../Core/Src/main.c:187:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:204:16: error: 'i' undeclared (first use in this function)
+  204 |         output[i] = '\0'; //Reference
+      |                ^
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+  188 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:259:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  259 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:48:58 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:204:16: error: 'i' undeclared (first use in this function)
+  204 |         output[i] = '\0'; //Reference
+      |                ^
+../Core/Src/main.c:204:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:259:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  259 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:51:08 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:260:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  260 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:195:22: warning: 'i' is used uninitialized [-Wuninitialized]
+  195 |         for(int i; i < max_length - 1; i++){
+      |                    ~~^~~~~~~~~~~~~~~~
+../Core/Src/main.c:195:17: note: 'i' was declared here
+  195 |         for(int i; i < max_length - 1; i++){
+      |                 ^
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:117:6: warning: infinite recursion detected [-Winfinite-recursion]
+  117 | void GreetUser(void){
+      |      ^~~~~~~~~
+../Core/Src/main.c:129:17: note: recursive call
+  129 |                 GreetUser();
+      |                 ^~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7248	     12	   1572	   8832	   2280	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:51:53 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7248	     12	   1572	   8832	   2280	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:53:29 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_read_string':
+../Core/Src/main.c:203:16: error: 'i' undeclared (first use in this function)
+  203 |         output[i] = '\0'; //Reference
+      |                ^
+../Core/Src/main.c:203:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:258:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  258 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:54:09 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:259:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  259 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:117:6: warning: infinite recursion detected [-Winfinite-recursion]
+  117 | void GreetUser(void){
+      |      ^~~~~~~~~
+../Core/Src/main.c:129:17: note: recursive call
+  129 |                 GreetUser();
+      |                 ^~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7252	     12	   1572	   8836	   2284	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:54:32 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7252	     12	   1572	   8836	   2284	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:55:52 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:259:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  259 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:117:6: warning: infinite recursion detected [-Winfinite-recursion]
+  117 | void GreetUser(void){
+      |      ^~~~~~~~~
+../Core/Src/main.c:129:17: note: recursive call
+  129 |                 GreetUser();
+      |                 ^~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7252	     12	   1572	   8836	   2284	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:55:57 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7252	     12	   1572	   8836	   2284	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+20:57:29 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:258:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  258 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7256	     12	   1572	   8840	   2288	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+20:57:40 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7256	     12	   1572	   8840	   2288	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:01:44 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:258:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  258 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7228	     12	   1572	   8812	   226c	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:01:52 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7228	     12	   1572	   8812	   226c	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:06:02 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:260:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  260 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:06:53 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:261:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  261 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:06:56 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:15:02 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:129:17: error: void value not ignored as it ought to be
+  129 |         yesOrNo = USART2_read_string(output, 1);
+      |                 ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:261:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  261 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:16:11 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:120:27: error: invalid initializer
+  120 |         char yesOrNo[1] = 'y';
+      |                           ^~~
+../Core/Src/main.c:122:23: warning: comparison between pointer and integer
+  122 |         while(yesOrNo == 'y'){
+      |                       ^~
+../Core/Src/main.c:130:20: warning: comparison between pointer and integer
+  130 |         if(yesOrNo == 'n'){
+      |                    ^~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:261:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  261 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:16:26 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GreetUser':
+../Core/Src/main.c:120:27: error: invalid initializer
+  120 |         char yesOrNo[1] = 'y';
+      |                           ^~~
+../Core/Src/main.c:122:23: warning: comparison between pointer and integer
+  122 |         while(yesOrNo == 'y'){
+      |                       ^~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:261:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  261 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:17:01 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:262:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  262 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7244	     12	   1572	   8828	   227c	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:17:09 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7244	     12	   1572	   8828	   227c	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:18:31 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:261:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  261 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:18:34 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:18:37 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7240	     12	   1572	   8824	   2278	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:21:15 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:189:13: error: two or more data types in declaration specifiers
+  189 |         int char input = USART2->DR;
+      |             ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:264:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  264 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:21:19 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'USART2_read_char':
+../Core/Src/main.c:189:13: error: two or more data types in declaration specifiers
+  189 |         int char input = USART2->DR;
+      |             ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:264:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  264 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:21:30 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:264:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  264 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7248	     12	   1572	   8832	   2280	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:21:36 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7248	     12	   1572	   8832	   2280	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:22:48 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:84:1: error: expected expression before '.' token
+   84 | ./  HAL_Init();
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:265:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  265 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:29:02 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:84:1: error: expected expression before '.' token
+   84 | ./  HAL_Init();
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:265:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  265 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:29:19 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:265:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  265 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6996	     12	   1572	   8580	   2184	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:29:33 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6996	     12	   1572	   8580	   2184	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:33:23 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:271:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  271 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7268	     12	   1572	   8852	   2294	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:33:27 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7268	     12	   1572	   8852	   2294	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:35:05 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:274:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  274 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7288	     12	   1572	   8872	   22a8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:35:09 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7288	     12	   1572	   8872	   22a8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:37:10 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:272:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  272 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7268	     12	   1572	   8852	   2294	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:37:15 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7268	     12	   1572	   8852	   2294	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+21:39:16 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:279:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  279 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "EmbeddedAssignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment3\EmbeddedAssignment2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EmbeddedAssignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EmbeddedAssignment2.elf
+ 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+arm-none-eabi-objdump -h -S EmbeddedAssignment2.elf  > "EmbeddedAssignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7368	     12	   1572	   8952	   22f8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: EmbeddedAssignment2.list
+ 
+21:39:21 **** Incremental Build of configuration Debug for project EmbeddedAssignment2 ****
+make -j16 all 
+arm-none-eabi-size  EmbeddedAssignment2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7368	     12	   1572	   8952	   22f8	EmbeddedAssignment2.elf
+Finished building: default.size.stdout
+ 

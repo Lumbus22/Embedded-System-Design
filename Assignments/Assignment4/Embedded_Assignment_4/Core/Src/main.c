@@ -18,8 +18,19 @@ void TIM1_init(void);
 void _delay_ms(int n);
 void initPA5(void);
 void controlPA5(bool state);
+
 void SysTick_Init(void);
 void _sysTick_delay_ms(int n);
+
+void USART2_read_string(char *output, int max_length);
+char USART2_read_char(void);
+void USART2_write_string(char *output);
+void USART2_init(void);
+
+void initPC13(void);
+
+
+void buttonTimer(void);
 
 int main(void)
 {
@@ -27,15 +38,44 @@ int main(void)
 
 	TIM1_init();
 	initPA5();
+
 	SysTick_Init();
+	USART2_init();
+
+	initPC13();
 
   while (1)
   {
-	  controlPA5(true);
-	  _sysTick_delay_ms(500);
-	  controlPA5(false);
-	  _sysTick_delay_ms(500);
+	  buttonTimer();
   }
+
+
+
+}
+
+void buttonTimer(void){
+	int ms = 0;
+	char buffer[50];
+
+	USART2_write_string("Waiting for button press...\n\r");
+	while((GPIOC -> IDR & (1 << 13)));
+	while(!(GPIOC -> IDR & (1 << 13))); //Timer starts on trailing edge of button timer.
+	USART2_write_string("Button Pressed, Starting timer!\n\r");
+
+	while((GPIOC -> IDR & (1 << 13))){
+	_sysTick_delay_ms(1);
+	ms++;
+
+	}
+	while(!(GPIOC -> IDR & (1 << 13)));
+
+	int seconds = ms / 1000;
+	int miliseconds = ms % 1000;
+
+	sprintf(buffer, "Button pressed for: %d.%d03 seconds \r\n\n", seconds, miliseconds);
+
+	USART2_write_string(buffer);
+
 
 
 
@@ -104,4 +144,89 @@ void SysTick_Init(void){
 	SysTick->VAL = 0;
 	SysTick->CTRL &= ~(0x07);
 	SysTick->CTRL |= 0x05;
+}
+
+void USART2_read_string(char *output, int max_length){
+
+	char readChar;
+	int i = 0;
+	for( i = 0; i < max_length - 1; i++){
+		readChar = USART2_read_char();
+
+		if(readChar == '\r' || readChar == '\n'){
+
+			//adding a section to flush buffer so \n and \r characters do not interfere with input
+			while(USART2 -> SR & (1 << 5)){
+				(void)USART2 -> DR;
+			}
+			break;
+		}
+		output[i] = readChar;
+	}
+
+	output[i] = '\0'; //Reference
+}
+
+char USART2_read_char(void) {
+	while (!(USART2 -> SR & (1 << 5)));
+
+	char input = USART2->DR;
+	//(void)USART2->DR; //Through away character. Trying to get rid of a null character.
+	//(void)USART2->DR; //Through away character. Trying to get rid of a null character.
+
+	return input;
+
+}
+
+void USART2_write_string(char *output){
+
+	//int transmit = (USART2 -> SR & 1 << 7);
+
+	while(*output){
+		while (!(USART2 -> SR & (1 << 7)));
+		USART2 -> DR = *output++;
+
+	}
+
+}
+
+void USART2_init(void){
+	/*Enable the clock for the port that the pins are on for
+
+	For USART2 we will be enabling pins PA2 and PA3
+	GPIOA port
+
+
+	*/
+	//Enable GPIOA ports
+	RCC -> AHB1ENR |= 0x1;
+
+	//Enable USART2 clock
+	RCC -> APB1ENR |= 0x1 << 17;
+
+	//Set PA2 and PA3 to alternate function mode
+	//Mask the ports
+	GPIOA -> MODER &= ~(0xF << 4);
+	//Enable the ports
+	GPIOA -> MODER |= 0xA << 4;
+
+	//Now we need to set the alternate function mode of the PIN to accept USART
+	//Clear the pins current function
+	GPIOA -> AFR[0] &= ~(0xFF << 8);
+
+	GPIOA -> AFR[0] |= 0x77 << 8;
+
+
+
+	//Setting the baud rate of the USART connection
+	USART2->BRR = 0x0683; //The system clock config is running he syustem at 84MHz. so BRR = 42000000 / 9600 = 4375 = 0x1117
+
+	//Enabling
+	USART2 -> CR1 |= 0x200C;
+}
+
+void initPC13(void){
+	RCC -> AHB1ENR |= 1 << 2;
+	GPIOC -> MODER &= ~(3 << 30);
+
 }

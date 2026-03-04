@@ -697,3 +697,420 @@ arm-none-eabi-size  Embedded_Assignment_4.elf
    1272	      8	   1568	   2848	    b20	Embedded_Assignment_4.elf
 Finished building: default.size.stdout
  
+21:57:21 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:33:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   33 | buttonTimer(void)
+      | ^~~~~~~~~~~
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+../Core/Src/main.c:56:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   56 | void buttonTimer(void){
+      |                       ^
+../Core/Src/main.c:63:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   63 | void TIM1_init(){
+      |                 ^
+../Core/Src/main.c:78:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   78 | void _sysTick_delay_ms(int n){
+      |                              ^
+../Core/Src/main.c:87:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   87 | void _delay_ms(int n){
+      |                      ^
+../Core/Src/main.c:102:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  102 | void initPA5(void){
+      |                   ^
+../Core/Src/main.c:112:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  112 | void controlPA5(bool state){
+      |                            ^
+../Core/Src/main.c:121:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  121 | void SysTick_Init(void){
+      |                        ^
+../Core/Src/main.c:128:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  128 | void USART2_read_string(char *output, int max_length){
+      |                                                      ^
+../Core/Src/main.c:149:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  149 | char USART2_read_char(void) {
+      |                             ^
+../Core/Src/main.c:160:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  160 | void USART2_write_string(char *output){
+      |                                       ^
+../Core/Src/main.c:172:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  172 | void USART2_init(void){
+      |                       ^
+../Core/Src/main.c:207:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  207 | void initPC13(void){
+      |                    ^
+../Core/Src/main.c:213: error: expected '{' at end of input
+../Core/Src/main.c:213: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:57:45 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:33:1: warning: data definition has no type or storage class
+   33 | buttonTimer(void);
+      | ^~~~~~~~~~~
+../Core/Src/main.c:33:1: warning: type defaults to 'int' in declaration of 'buttonTimer' [-Wimplicit-int]
+../Core/Src/main.c:56:6: error: conflicting types for 'buttonTimer'; have 'void(void)'
+   56 | void buttonTimer(void){
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:33:1: note: previous declaration of 'buttonTimer' with type 'int(void)'
+   33 | buttonTimer(void);
+      | ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:57:55 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+21:58:47 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:04:28 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:04:30 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:05:15 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:05:18 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1536	      8	   1568	   3112	    c28	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:06:01 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1552	      8	   1568	   3128	    c38	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:06:19 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1552	      8	   1568	   3128	    c38	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:14:03 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:72:29: warning: passing argument 1 of 'USART2_write_string' makes pointer from integer without a cast [-Wint-conversion]
+   72 |         USART2_write_string(ms);
+      |                             ^~
+      |                             |
+      |                             int
+../Core/Src/main.c:28:32: note: expected 'char *' but argument is of type 'int'
+   28 | void USART2_write_string(char *output);
+      |                          ~~~~~~^~~~~~
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1628	      8	   1568	   3204	    c84	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:14:37 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1628	      8	   1568	   3204	    c84	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:15:48 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:72:29: warning: passing argument 1 of 'USART2_write_string' makes pointer from integer without a cast [-Wint-conversion]
+   72 |         USART2_write_string(ms);
+      |                             ^~
+      |                             |
+      |                             int
+../Core/Src/main.c:28:32: note: expected 'char *' but argument is of type 'int'
+   28 | void USART2_write_string(char *output);
+      |                          ~~~~~~^~~~~~
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   1628	      8	   1568	   3204	    c84	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:15:51 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1628	      8	   1568	   3204	    c84	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:18:40 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:73:9: error: unknown type name 'string'
+   73 |         string str = "bruh";
+      |         ^~~~~~
+../Core/Src/main.c:73:22: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 |         string str = "bruh";
+      |                      ^~~~~~
+../Core/Src/main.c:75:29: warning: passing argument 1 of 'USART2_write_string' makes pointer from integer without a cast [-Wint-conversion]
+   75 |         USART2_write_string(str);
+      |                             ^~~
+      |                             |
+      |                             int
+../Core/Src/main.c:28:32: note: expected 'char *' but argument is of type 'int'
+   28 | void USART2_write_string(char *output);
+      |                          ~~~~~~^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:20:28 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:15:10: fatal error: string: No such file or directory
+   15 | #include <string>
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:21:06 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:15:10: fatal error: string: No such file or directory
+   15 | #include <string>
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:21:12 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:72:9: error: 'std' undeclared (first use in this function)
+   72 |         std::string str = "bruh";
+      |         ^~~
+../Core/Src/main.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:72:12: error: expected ';' before '::' token
+   72 |         std::string str = "bruh";
+      |            ^~
+      |            ;
+../Core/Src/main.c:74:29: error: 'str' undeclared (first use in this function)
+   74 |         USART2_write_string(str);
+      |                             ^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:29:17 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:72:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   72 |         sprintf(buffer, "Button pressed for: %d ms\r\n", ms);
+      |         ^~~~~~~
+../Core/Src/main.c:15:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   14 | #include <stdbool.h>
+  +++ |+#include <stdio.h>
+   15 | 
+../Core/Src/main.c:72:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   72 |         sprintf(buffer, "Button pressed for: %d ms\r\n", ms);
+      |         ^~~~~~~
+../Core/Src/main.c:72:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:72:17: error: 'buffer' undeclared (first use in this function)
+   72 |         sprintf(buffer, "Button pressed for: %d ms\r\n", ms);
+      |                 ^~~~~~
+../Core/Src/main.c:72:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:30:06 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:73:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   73 |         sprintf(buffer, "Button pressed for: %d ms\r\n", ms);
+      |         ^~~~~~~
+../Core/Src/main.c:15:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   14 | #include <stdbool.h>
+  +++ |+#include <stdio.h>
+   15 | 
+../Core/Src/main.c:73:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   73 |         sprintf(buffer, "Button pressed for: %d ms\r\n", ms);
+      |         ^~~~~~~
+../Core/Src/main.c:73:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   4300	     88	   1904	   6292	   1894	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:30:22 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4300	     88	   1904	   6292	   1894	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:32:53 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:75:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 ms\r\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:15:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   14 | #include <stdbool.h>
+  +++ |+#include <stdio.h>
+   15 | 
+../Core/Src/main.c:75:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 ms\r\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:75:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   4312	     88	   1904	   6304	   18a0	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:32:59 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4312	     88	   1904	   6304	   18a0	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:34:07 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:75:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 ms\r\n\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:15:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   14 | #include <stdbool.h>
+  +++ |+#include <stdio.h>
+   15 | 
+../Core/Src/main.c:75:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 ms\r\n\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:75:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   4316	     88	   1904	   6308	   18a4	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:34:11 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4316	     88	   1904	   6308	   18a4	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+22:37:42 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'buttonTimer':
+../Core/Src/main.c:75:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 seconds \r\n\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:15:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   14 | #include <stdbool.h>
+  +++ |+#include <stdio.h>
+   15 | 
+../Core/Src/main.c:75:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   75 |         sprintf(buffer, "Button pressed for: %d.%d03 seconds \r\n\n", seconds, miliseconds);
+      |         ^~~~~~~
+../Core/Src/main.c:75:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "Embedded_Assignment_4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment4\Embedded_Assignment_4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_Assignment_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Embedded_Assignment_4.elf
+ 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+arm-none-eabi-objdump -h -S Embedded_Assignment_4.elf  > "Embedded_Assignment_4.list"
+   text	   data	    bss	    dec	    hex	filename
+   4320	     88	   1904	   6312	   18a8	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_Assignment_4.list
+ 
+22:37:58 **** Incremental Build of configuration Debug for project Embedded_Assignment_4 ****
+make -j16 all 
+arm-none-eabi-size  Embedded_Assignment_4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4320	     88	   1904	   6312	   18a8	Embedded_Assignment_4.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,7 @@
+../Core/Src/main.c:24:5:main	1
+../Core/Src/main.c:44:6:TIM1_init	1
+../Core/Src/main.c:59:6:_sysTick_delay_ms	3
+../Core/Src/main.c:68:6:_delay_ms	2
+../Core/Src/main.c:83:6:initPA5	1
+../Core/Src/main.c:93:6:controlPA5	3
+../Core/Src/main.c:102:6:SysTick_Init	1

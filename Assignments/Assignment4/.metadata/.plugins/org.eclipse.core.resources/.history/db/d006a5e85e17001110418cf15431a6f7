@@ -1,0 +1,62 @@
+/***************************************************
+* Timers / Embedded_Assignemnt_4
+*
+* Implementing a custom timer delay function using TIM1 and SysTick
+*
+*
+* Author: Columbus Enslen
+* Date Last Modified: 3/3/2026
+*
+***************************************************/
+
+
+#include "main.h"
+
+
+void TIM1_init(void);
+void _delay_ms(int n);
+
+
+int main(void)
+{
+
+
+  while (1)
+  {
+
+  }
+
+}
+
+void TIM1_init(){
+
+	RCC -> APB2ENR |= 1;
+
+	TIM1 -> PSC &= 0;
+	TIM1 -> PSC |= 83999; // PSC + 1 = 83999. Divide the 84MHz clock by 84k means the register will update every 1ms.
+
+
+	TIM1 -> EGR |= 1; //Trigger an event so the prescalar is loaded
+
+
+}
+
+void _delay_ms(int n){
+
+	TIM1 -> CNT = 0; //Clear current count
+
+	TIM1 -> ARR = n - 1; //Set the ARR so an event is triggered on the specified time interval.
+
+	TIM1 -> SR = 0;//Clear the status register
+
+	TIM1 -> CR1 |= 1; //Enable counter in control register
+
+
+	if((TIM1 -> SR) == 1){
+		TIM1 -> CR1 |= 0; //Disable register
+		return;
+	}
+
+
+
+}

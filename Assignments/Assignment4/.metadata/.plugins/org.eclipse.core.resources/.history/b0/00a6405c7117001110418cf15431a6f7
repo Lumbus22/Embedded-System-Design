@@ -1,0 +1,98 @@
+/***************************************************
+* Timers / Embedded_Assignemnt_4
+*
+* Implementing a custom timer delay function using TIM1 and SysTick
+*
+*
+* Author: Columbus Enslen
+* Date Last Modified: 3/3/2026
+*
+***************************************************/
+
+
+#include "main.h"
+#include <stdbool.h>
+
+
+void TIM1_init(void);
+void _delay_ms(int n);
+void initPA5(void);
+void controlPA5(bool state);
+
+
+int main(void)
+{
+    RCC->AHB1ENR |= 1;
+
+    // Small delay to let clock stabilize
+    for(volatile int i = 0; i < 1000; i++);
+
+    GPIOA->MODER &= ~(3 << 10);
+    GPIOA->MODER |=  (1 << 10);
+    GPIOA->ODR   |=  (1 << 5);  // Try ODR instead of BSRR
+
+    while(1){}
+	/*
+	TIM1_init();
+	initPA5();
+
+  while (1)
+  {
+	  controlPA5(true);
+	 // _delay_ms(500);
+	  //controlPA5(false);
+	  //_delay_ms(500);
+  }
+
+
+*/
+}
+
+void TIM1_init(){
+
+	RCC -> APB2ENR |= 1;
+
+	TIM1 -> PSC = 15999; // PSC + 1 = 16000. Divide the 16MHz clock by 16k means the register will update every 1ms.
+
+
+	TIM1 -> EGR |= (1 << 0); //Trigger an event so the prescalar is loaded
+
+	TIM1 -> SR = 0; // Clear Status register
+
+	TIM1 -> CR1 |= (1 << 3); // Set one pulse mode so clock disables itself.
+
+}
+
+void _delay_ms(int n){
+
+	TIM1 -> CNT = 0; //Clear current count
+
+	TIM1 -> ARR = n - 1; //Set the ARR so an event is triggered on the specified time interval.
+
+	TIM1 -> SR = 0;//Clear the status register
+
+	TIM1 -> CR1 |= (1 << 0); //Enable counter in control register
+
+
+	while(!((TIM1 -> SR) & (1 << 0)));
+
+}
+
+void initPA5(void){
+	RCC -> AHB1ENR |= 1;
+	GPIOA -> MODER &= ~(3 << 10);
+	GPIOA -> MODER |= (1 << 10);
+
+	//Start with LED on.
+	GPIOA -> BSRR |= (1 << 5);
+
+}
+
+void controlPA5(bool state){
+	if(state){
+		GPIOA -> BSRR |= (1 << 5);
+	}
+	if(!state){
+		GPIOA -> BSRR |= (1 << (5 + 16));
+	}
+}

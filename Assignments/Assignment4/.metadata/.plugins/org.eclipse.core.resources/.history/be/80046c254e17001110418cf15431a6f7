@@ -1,0 +1,31 @@
+
+#include "main.h"
+
+
+void TIM1_init(void);
+void _delay_ms(int n);
+
+
+int main(void)
+{
+
+
+  while (1)
+  {
+
+  }
+
+}
+
+void TIM1_init(){
+	RCC -> APB1ENR |= 0;
+	RCC -> APB2ENR |= 1;
+
+	RCC -> TIM1_PSC &= 0;
+	RCC -> TIM1_PSC |= 15999; // PSC + 1 = 16000. Divide the 16MHz clock by 16k means the register will update every 1ms.
+	RCC -> TIM1_EGR |= 1;
+}
+
+void _delay_ms(int n){
+
+}

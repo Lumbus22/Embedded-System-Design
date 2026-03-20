@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="_delay_ms"/>
+		<item value="delay_ms"/>
+		<item value="delay_us"/>
+		<item value="us"/>
+		<item value="GPIOC"/>
+	</list>
+</section>

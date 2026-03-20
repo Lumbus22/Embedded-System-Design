@@ -1,0 +1,14 @@
+../Core/Src/main.c:47:5:main	8	static
+../Core/Src/main.c:75:6:TIM1_init	4	static
+../Core/Src/main.c:89:6:TIM2_init	4	static
+../Core/Src/main.c:107:6:countMinAndSec	80	static
+../Core/Src/main.c:152:6:WriteMinutesAndSeconds	8	static
+../Core/Src/main.c:162:6:_sysTick_delay_ms	24	static
+../Core/Src/main.c:171:6:_delay_us	16	static
+../Core/Src/main.c:185:6:SysTick_Init	4	static
+../Core/Src/main.c:193:6:initPC13	4	static
+../Core/Src/main.c:199:6:LCD_Pulse_EN	8	static
+../Core/Src/main.c:212:6:LCD_Command	16	static
+../Core/Src/main.c:230:6:LCD_Init_8Bit	8	static
+../Core/Src/main.c:292:6:LCD_Data	16	static
+../Core/Src/main.c:314:6:LCD_String	16	static

@@ -1,0 +1,421 @@
+/***************************************************
+* Timers / Embedded_Assignemnt_4
+*
+* Implementing a custom timer delay function using TIM1 and SysTick
+*
+*
+* Author: Columbus Enslen
+* Date Last Modified: 3/3/2026
+*
+***************************************************/
+
+
+#include "main.h"
+#include <stdbool.h>
+#include <stdio.h>
+
+
+void TIM1_init(void);
+void TIM2_init();
+
+
+void _delay_ms(int n);
+void initPA5(void);
+void controlPA5(bool state);
+
+void SysTick_Init(void);
+void _sysTick_delay_ms(int n);
+
+void USART2_read_string(char *output, int max_length);
+char USART2_read_char(void);
+void USART2_write_string(char *output);
+void USART2_init(void);
+
+void initPC13(void);
+
+
+void buttonTimer(void);
+
+void LCD_Init_8Bit(void);
+
+void LCD_Pulse_EN(void);
+
+void LCD_Command(unsigned char cmd);
+
+void LCD_Data(unsigned char data);
+
+void LCD_String(char* str);
+
+
+int main(void)
+{
+
+	//Init Timers
+	TIM1_init();
+	TIM2_init();
+
+	//Init LED
+	initPA5();
+
+	//Init Systick
+	SysTick_Init();
+
+	//Init USART
+	USART2_init();
+
+	//Init PC13, Button
+	initPC13();
+
+	//Init LCD
+	LCD_Init_8Bit();
+
+  while (1)
+  {
+	  while(!(TIM2 -> SR)){
+
+	  }
+  }
+
+
+
+}
+
+void buttonTimer(void){
+	int ms = 0;
+	char buffer[50];
+
+	LCD_String("Waiting for button press...\n\r");
+	while((GPIOC -> IDR & (1 << 13)));
+	while(!(GPIOC -> IDR & (1 << 13))); //Timer starts on trailing edge of button timer.
+	LCD_String("Button Pressed, Starting timer!\n\r");
+
+	while((GPIOC -> IDR & (1 << 13))){
+	_sysTick_delay_ms(1);
+	ms++;
+
+	}
+	while(!(GPIOC -> IDR & (1 << 13)));
+
+	int seconds = ms / 1000;
+	int miliseconds = ms % 1000;
+
+	sprintf(buffer, "Button pressed for: %d:%d03 seconds \r\n\n", seconds, miliseconds);
+
+	LCD_String(buffer);
+
+
+
+
+}
+
+void TIM1_init(){
+
+	RCC -> APB2ENR |= 1;
+
+	TIM1 -> PSC = 15999; // PSC + 1 = 16000. Divide the 16MHz clock by 16k means the register will update every 1ms.
+
+	TIM1 -> EGR |= (1 << 0); //Trigger an event so the prescalar is loaded
+
+	TIM1 -> SR = 0; // Clear Status register
+
+	TIM1 -> CR1 |= (1 << 3); // Set one pulse mode so clock disables itself.
+
+}
+
+void TIM2_init(){
+
+	RCC -> APB1ENR |= 1;
+
+	TIM2 -> PSC = 15999; // PSC + 1 = 16000. Divide the 16MHz clock by 16k means the register will update every 1ms.
+
+	TIM2 -> EGR |= (1 << 0); //Trigger an event so the prescalar is loaded
+
+	TIM2 -> SR = 0; // Clear Status register
+
+	//TIM2 -> CR1 |= (1 << 3); // Set one pulse mode so clock disables itself.
+
+}
+
+void countMinAndSec(){
+	TIM2_init(); // Init Timmer 2
+	initPC13();  // Init PC 13
+
+	int minutes = 0;
+	int seconds = 0;
+
+	TIM2 -> CNT = 0;
+
+	TIM2 -> ARR = 60000;
+
+	TIM2 -> SR = 0;
+
+	//While button is not pressed
+	while(!(GPIOC -> IDR & (1 << 13))){
+		seconds = TIM2 -> CNT / 1000;
+
+		if(TIM2 -> SR){
+			minutes++;
+		}
+	}
+}
+
+void _sysTick_delay_ms(int n){
+		int i;
+		for (i= 0; i < n; i ++)
+		{
+			while ((SysTick->CTRL & 0x10000) == 0){}
+		}
+	return;
+}
+
+void _delay_ms(int n){
+
+	TIM1 -> CNT = 0; //Clear current count
+
+	TIM1 -> ARR = n - 1; //Set the ARR so an event is triggered on the specified time interval.
+
+	TIM1 -> SR = 0;//Clear the status register
+
+	TIM1 -> CR1 |= (1 << 0); //Enable counter in control register
+
+
+}
+
+void initPA5(void){
+	RCC -> AHB1ENR |= 1;
+	GPIOA -> MODER &= ~(3 << 10);
+	GPIOA -> MODER |= (1 << 10);
+
+	//Start with LED on.
+	GPIOA -> BSRR |= (1 << 5);
+
+}
+
+void controlPA5(bool state){
+	if(state){
+		GPIOA -> BSRR |= (1 << 5);
+	}
+	if(!state){
+		GPIOA -> BSRR |= (1 << (5 + 16));
+	}
+}
+
+void SysTick_Init(void){
+	SysTick -> LOAD = (SystemCoreClock / 1000) - 1;
+	SysTick->VAL = 0;
+	SysTick->CTRL &= ~(0x07);
+	SysTick->CTRL |= 0x05;
+}
+
+void USART2_read_string(char *output, int max_length){
+
+	char readChar;
+	int i = 0;
+	for( i = 0; i < max_length - 1; i++){
+		readChar = USART2_read_char();
+
+		if(readChar == '\r' || readChar == '\n'){
+
+			//adding a section to flush buffer so \n and \r characters do not interfere with input
+			while(USART2 -> SR & (1 << 5)){
+				(void)USART2 -> DR;
+			}
+			break;
+		}
+		output[i] = readChar;
+	}
+
+	output[i] = '\0'; //Reference
+}
+
+char USART2_read_char(void) {
+	while (!(USART2 -> SR & (1 << 5)));
+
+	char input = USART2->DR;
+	//(void)USART2->DR; //Through away character. Trying to get rid of a null character.
+	//(void)USART2->DR; //Through away character. Trying to get rid of a null character.
+
+	return input;
+
+}
+
+void USART2_write_string(char *output){
+
+	//int transmit = (USART2 -> SR & 1 << 7);
+
+	while(*output){
+		while (!(USART2 -> SR & (1 << 7)));
+		USART2 -> DR = *output++;
+
+	}
+
+}
+
+void USART2_init(void){
+	/*Enable the clock for the port that the pins are on for
+
+	For USART2 we will be enabling pins PA2 and PA3
+	GPIOA port
+
+
+	*/
+	//Enable GPIOA ports
+	RCC -> AHB1ENR |= 0x1;
+
+	//Enable USART2 clock
+	RCC -> APB1ENR |= 0x1 << 17;
+
+	//Set PA2 and PA3 to alternate function mode
+	//Mask the ports
+	GPIOA -> MODER &= ~(0xF << 4);
+	//Enable the ports
+	GPIOA -> MODER |= 0xA << 4;
+
+	//Now we need to set the alternate function mode of the PIN to accept USART
+	//Clear the pins current function
+	GPIOA -> AFR[0] &= ~(0xFF << 8);
+
+	GPIOA -> AFR[0] |= 0x77 << 8;
+
+
+
+	//Setting the baud rate of the USART connection
+	USART2->BRR = 0x0683; //The system clock config is running he syustem at 84MHz. so BRR = 42000000 / 9600 = 4375 = 0x1117
+
+	//Enabling
+	USART2 -> CR1 |= 0x200C;
+}
+
+void initPC13(void){
+	RCC -> AHB1ENR |= 1 << 2;
+	GPIOC -> MODER &= ~(3 << 30);
+
+}
+
+void LCD_Pulse_EN(void) {
+
+GPIOB->BSRR = (1 << 7); // Set PB7 (EN) HIGH
+
+_delay_ms(10); // Wait a tiny bit for LCD to read
+
+GPIOB->BSRR = (1 << (7 + 16));// Set PB7 (EN) LOW
+
+_delay_ms(2); // Wait for command to execute
+
+}
+
+void LCD_Command(unsigned char cmd) {
+
+GPIOB->BSRR = (1 << (5 + 16)); // RS = 0 for command (PB5 LOW)
+
+GPIOB->BSRR = (1 << (6 + 16)); // RW = 0 for write (PB6 LOW)
+
+
+
+// Put the 8-bit command onto Port C (PC0-PC7)
+
+// We mask the lower 8 bits so we don't disturb PC8-PC15
+
+GPIOC->ODR = (GPIOC->ODR & 0xFF00) | cmd;
+
+
+
+LCD_Pulse_EN(); // Latch the command
+
+}
+
+void LCD_Init_8Bit(void) {
+
+// 1. Enable clocks for Port B (Control) and Port C (Data)
+
+RCC->AHB1ENR |= RCC_AHB1ENR_GPIOBEN | RCC_AHB1ENR_GPIOCEN;
+
+
+
+// 2. Configure PB5, PB6, PB7 as General Purpose Outputs
+
+// Clear the mode bits first, then set to 01 (Output)
+
+GPIOB->MODER &= ~((3 << 10) | (3 << 12) | (3 << 14));
+
+GPIOB->MODER |= ((1 << 10) | (1 << 12) | (1 << 14));
+
+
+
+// 3. Configure PC0 to PC7 as General Purpose Outputs
+
+GPIOC->MODER &= 0xFFFF0000; // Clear mode bits for PC0-PC7
+
+GPIOC->MODER |= 0x00005555; // Set PC0-PC7 to 01 (Output mode)
+
+
+
+// 4. LCD Boot-up Sequence
+
+_delay_ms(20); // Wait >15ms after power on
+
+
+
+LCD_Command(0x30); // Wake up / Function set
+
+_delay_ms(5); // Wait >4.1ms
+
+
+
+LCD_Command(0x30); // Wake up 2
+
+delay_ms(1); // Wait >100us
+
+
+
+LCD_Command(0x30); // Wake up 3
+
+
+
+// 5. Initial Display Configuration
+
+LCD_Command(0x38); // Function Set: 8-bit interface, 2 lines, 5x8 font
+
+LCD_Command(0x0C); // Display control: Display ON, Cursor OFF, Blink OFF
+
+LCD_Command(0x01); // Clear Display
+
+_delay_ms(2); // Clear display requires extra time
+
+LCD_Command(0x06); // Entry Mode: Auto-increment cursor, no display shift
+
+}
+
+void LCD_Data(unsigned char data) {
+
+GPIOB->BSRR = (1 << 5); // RS = 1 for data (PB5 HIGH)
+
+GPIOB->BSRR = (1 << (6 + 16)); // RW = 0 for write (PB6 LOW)
+
+
+
+// Put the 8-bit character data onto Port C (PC0-PC7)
+
+// We mask the lower 8 bits so we don't disturb PC8-PC15
+
+GPIOC->ODR = (GPIOC->ODR & 0xFF00) | data;
+
+
+
+LCD_Pulse_EN(); // Latch the data
+
+}
+
+
+
+void LCD_String(char* str) {
+
+while (*str) { // Loop until we hit the null terminator '\0'
+
+LCD_Data(*str); // Send the current character
+
+str++; // Move to the next character
+
+}
+
+}

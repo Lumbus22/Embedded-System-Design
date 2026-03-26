@@ -1,0 +1,10 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Core/Src/main.c:36:5:main	8	static
+../Core/Src/main.c:53:6:TIM2_IRQHandler	4	static
+../Core/Src/main.c:66:6:EXTI15_10_IRQHandler	4	static
+../Core/Src/main.c:85:6:initTIM2_Interrupt	8	static
+../Core/Src/main.c:109:6:initPC13_EXTI	8	static
+../Core/Src/main.c:135:6:SysTick_Init	4	static
+../Core/Src/main.c:143:6:_sysTick_delay_ms	24	static
+../Core/Src/main.c:156:6:initPA5	4	static
+../Core/Src/main.c:168:6:initPC9	4	static

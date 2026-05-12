@@ -1,17 +1,17 @@
-17:19:38 **** Incremental Build of configuration Debug for project Assignment6 ****
+23:34:40 **** Incremental Build of configuration Debug for project Assignment6 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Assignment6.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/laptop/Documents/GitHub/Embedded-System-Design/Assignments/Assignment6/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Assignment6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-g++ -o "Assignment6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\coleb\Documents\GitHub\Embedded-System-Design\Assignments\Assignment6\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Assignment6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: Assignment6.elf
  
 arm-none-eabi-size  Assignment6.elf 
 arm-none-eabi-objdump -h -S Assignment6.elf  > "Assignment6.list"
    text	   data	    bss	    dec	    hex	filename
-   1656	      8	   1568	   3232	    ca0	Assignment6.elf
+   2144	      8	   1608	   3760	    eb0	Assignment6.elf
 Finished building: default.size.stdout
  
 Finished building: Assignment6.list
  
 
-17:19:38 Build Finished. 0 errors, 0 warnings. (took 397ms)
+23:34:41 Build Finished. 0 errors, 0 warnings. (took 1s.62ms)
 

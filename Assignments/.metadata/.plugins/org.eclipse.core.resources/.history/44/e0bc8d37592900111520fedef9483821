@@ -1,0 +1,151 @@
+/***************************************************
+* Timers Part 2 / Embedded_Assignemnt_5
+*
+* Implementing a custom counting function using TIM2 to display minutes and seconds. Clock can be reset using the on board push button.
+*
+*
+* Author: Columbus Enslen
+* Date Last Modified: 3/15/2026
+*
+***************************************************/
+
+
+#include "main.h"
+#include <stdbool.h>
+
+//Timer
+void TIM2_init(void);
+
+//Delays
+void SysTick_Init(void);
+void _sysTick_delay_ms(int n);
+
+//Button + EXTI
+void initPC13_EXTI(void);
+
+//LEDs
+void togglePA5(bool state);
+void togglePC9(bool state);
+
+
+int main(void)
+{
+	SysTick_Init();
+
+	togglePA5(0);   //Init PA5 output, start with LED off
+	togglePC9(0);   //Init PC9 output, start with LED off
+
+	TIM2_init();        //3-second interrupt for PA5 toggle
+	initPC13_EXTI();    //Button edge interrupt for PC9 control
+
+	//CPU has nothing to do -- interrupts handle all behaviour
+	while(1){ }
+}
+
+
+//TIM2 ISR -- fires every 3000ms, toggles PA5
+void TIM2_IRQHandler(void){
+	if(TIM2 -> SR & (1 << 0)){       //Check update interrupt flag (UIF)
+		TIM2 -> SR &= ~(1 << 0);     //Clear UIF before returning
+		GPIOA -> ODR ^= (1 << 5);    //Toggle PA5
+	}
+}
+
+//EXTI15_10 ISR -- fires on PC13 rising OR falling edge
+void EXTI15_10_IRQHandler(void){
+	if(EXTI -> PR & (1 << 13)){      //Check PC13 pending bit
+		EXTI -> PR |= (1 << 13);     //Clear pending bit (write 1 to clear)
+
+		//Read current button state and drive PC9 accordingly
+		//PC13 is active-low: pin LOW = button pressed
+		if(!(GPIOC -> IDR & (1 << 13))){
+			GPIOC -> ODR |= 1 << 9;  //Button pressed  -> LED on
+		}
+		else{
+			GPIOC -> ODR &= ~(1 << 9); //Button released -> LED off
+		}
+	}
+}
+
+
+void TIM2_init(void){
+	RCC -> APB1ENR |= 1;             //Enable TIM2 clock
+
+	TIM2 -> PSC = 15999;             //16MHz / 16000 = 1kHz -> 1ms per tick
+	TIM2 -> ARR = 2999;              //Count 0..2999 = 3000ms
+	TIM2 -> CNT = 0;
+
+	TIM2 -> EGR |= (1 << 0);        //Force update event to load PSC
+	TIM2 -> SR &= ~(1 << 0);        //Clear UIF set by EGR write
+
+	TIM2 -> DIER |= (1 << 0);       //UIE -- enable update interrupt
+	TIM2 -> CR1 |= (1 << 0);        //CEN -- start counter
+
+	NVIC_EnableIRQ(TIM2_IRQn);       //Unmask TIM2 in NVIC
+}
+
+void initPC13_EXTI(void){
+	//--- PC13 as input ---
+	RCC -> AHB1ENR |= 1 << 2;       //Enable GPIOC clock
+	GPIOC -> MODER &= ~(3 << 26);   //PC13 = input (default)
+
+	//--- Route EXTI13 to Port C via SYSCFG ---
+	RCC -> APB2ENR |= (1 << 14);    //Enable SYSCFG clock
+
+	//EXTICR[3] controls lines 12-15. Bits [7:4] select source for line 13.
+	//0x2 = Port C
+	SYSCFG -> EXTICR[3] &= ~(0xF << 4);
+	SYSCFG -> EXTICR[3] |= (0x2 << 4);
+
+	//--- Unmask and configure both edges ---
+	EXTI -> IMR |= (1 << 13);       //Unmask interrupt on line 13
+	EXTI -> RTSR |= (1 << 13);      //Rising edge trigger (button release)
+	EXTI -> FTSR |= (1 << 13);      //Falling edge trigger (button press)
+
+	NVIC_EnableIRQ(EXTI15_10_IRQn); //Lines 10-15 share one IRQ
+}
+
+
+void SysTick_Init(void){
+	SysTick -> LOAD = (SystemCoreClock / 1000) - 1;
+	SysTick -> VAL = 0;
+	SysTick -> CTRL &= ~(0x07);
+	SysTick -> CTRL |= 0x05;
+}
+
+void _sysTick_delay_ms(int n){
+	int i;
+	for(i = 0; i < n; i++){
+		while((SysTick -> CTRL & 0x10000) == 0){}
+	}
+}
+
+
+void togglePA5(bool state){
+	RCC -> AHB1ENR |= 1 << 0;       //Enable GPIOA clock
+
+	GPIOA -> MODER &= ~(3 << 10);   //Clear PA5 mode bits
+	GPIOA -> MODER |= 1 << 10;      //PA5 = general-purpose output
+
+	if(state){
+		GPIOA -> ODR |= 1 << 5;
+	}
+	if(!state){
+		GPIOA -> ODR &= ~(1 << 5);
+	}
+}
+
+void togglePC9(bool state){
+	RCC -> AHB1ENR |= 1 << 2;       //Enable GPIOC clock
+
+	GPIOC -> MODER &= ~(3 << 18);   //Clear PC9 mode bits
+	GPIOC -> MODER |= 1 << 18;      //PC9 = general-purpose output
+
+	if(state){
+		GPIOC -> ODR |= 1 << 9;
+	}
+	if(!state){
+		GPIOC -> ODR &= ~(1 << 9);
+	}
+}
+
